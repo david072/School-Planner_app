@@ -142,7 +142,7 @@
     <ListView
         android:id="@+id/main_mytasks_list"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dip"
         android:orientation="vertical"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="20dp"
@@ -150,7 +150,7 @@
         android:layout_marginEnd="30dp"
         android:divider="@android:color/transparent"
         android:dividerHeight="10dp"
-        android:scrollbars="vertical"
+        android:scrollbars="none"
         app:layout_constraintBottom_toTopOf="@id/main_addtask_button"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
