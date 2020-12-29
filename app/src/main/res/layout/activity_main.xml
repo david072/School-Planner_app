@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/main_topArea_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/main_top_area_bg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="20dp"
+        android:paddingTop="30dp">
+
+        <TextView
+            android:id="@+id/main_title_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sonntag, 29. Nov 2020"
+            android:fontFamily="@font/axiforma_light"
+            android:textColor="@color/textAccentDark"
+            android:textSize="12sp"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/main_title_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hey,\nwhat's up?"
+            android:fontFamily="@font/axiforma_black"
+            android:textSize="25sp"
+            android:textColor="@color/darkText"
+            android:layout_marginBottom="14dp"
+            android:lineHeight="50dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:background="@drawable/main_completed_tasks_background">
+
+                <TextView
+                    android:id="@+id/main_completed_tasks_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="5dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/main_completed_tasks_field_description"
+                    android:fontFamily="@font/axiforma_bold"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/main_completed_tasks_field_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/completed_tasks_description"
+                    android:fontFamily="@font/axiforma_medium"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textSize="12sp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:textColor="@color/mainTopAreaFirstFieldDescription"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:layout_marginStart="10dp"
+                android:paddingBottom="15dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp">
+
+                <TextView
+                    android:id="@+id/main_tasks_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="5dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/main_tasks_field_description"
+                    android:fontFamily="@font/axiforma_bold"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:id="@+id/main_tasks_field_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tasks_description"
+                    android:fontFamily="@font/axiforma_medium"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textSize="12sp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:textColor="@color/mainTopAreaSecondFieldDescription"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/main_mytasks_headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_tasks"
+        android:fontFamily="@font/axiforma_semibold"
+        app:layout_constraintTop_toBottomOf="@id/main_topArea_linearLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textColor="@color/darkText"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:textSize="18sp"/>
+
+    <ListView
+        android:id="@+id/main_mytasks_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toTopOf="@id/main_addtask_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main_mytasks_headline"
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <Button
+        android:id="@+id/main_addtask_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_enabled"
+        android:fontFamily="@font/axiforma_bold"
+        android:textSize="18sp"
+        android:text="@string/add_task_button"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

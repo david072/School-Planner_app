@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mainTopBackground">#E9EBF0</color>
+
+    <color name="task_listview_item_border">#B3B8C9</color>
+    <color name="task_listview_item_subjectfield_background">#222429</color>
+
+    <color name="blueColor">#0068FF</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="edit_text_line_normal">#E2E6EE</color>
+    <color name="edit_text_line_focused">#BCC0C8</color>
+
+    <color name="button_disabled">#4C4E53</color>
+    <color name="button_enabled">#222429</color>
+    
+    <color name="due_at_background">#CDE7FB</color>
+    <color name="notification_background">#E6CFFF</color>
+    <color name="subject_background">#FEF0ED</color>
+
+    <color name="darkText">#222429</color>
+    <color name="hintText">#B2B8C9</color>
+    <color name="textAccentDark">#6B86B6</color>
+    <color name="textAccentLight">#CED1DF</color>
+    <color name="mainTopAreaFirstFieldDescription">#7EB2FF</color>
+    <color name="mainTopAreaSecondFieldDescription">#CBCFDE</color>
+
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+    <!-- ====== Subject colors ====== -->
+    <color name="subject_biology">#80FF00</color>
+    <color name="subject_nwt">#3D604A</color>
+    <color name="subject_imp">#00FFFF</color>
+    <color name="subject_spanish">#005E5E</color>
+    <color name="subject_mathematics">#80FFFF</color>
+    <color name="subject_german">#FFFF80</color>
+    <color name="subject_english">#408080</color>
+    <color name="subject_history">#0000FF</color>
+    <color name="subject_latin">#804040</color>
+    <color name="subject_french">#FF80FF</color>
+    <color name="subject_physics">#80FF80</color>
+    <color name="subject_sports">#FF0000</color>
+    <color name="subject_geography">#0080FF</color>
+    <color name="subject_evangelical_religion">#8000FF</color>
+    <color name="subject_catholic_religion">#8000FF</color>
+    <color name="subject_ethnics">#8000FF</color>
+    <color name="subject_gkwbs">#004080</color>
+    <color name="subject_chemistry">#FF8040</color>
+    <!-- ============================== -->
+
+</resources>

@@ -1,0 +1,74 @@
+<resources>
+
+    <string name="app_name">School Planner</string>
+
+    <string name="back_arrow_contentdesc">Zurück</string>
+
+    <string name="task_done_mark">FERTIG !</string>
+
+    <string name="general_cancel">Abbrechen</string>
+
+    <!-- Main Activity strings -->
+    <string name="due_soon">Bald fällig</string>
+    <string name="my_tasks">Meine Aufgaben</string>
+    <string name="add_task_button">+ Aufgabe hinzufügen</string>
+    <string name="completed_tasks_description">Fertig</string>
+    <string name="tasks_description">Aufgaben</string>
+
+    <!-- Create Task Activity strings -->
+    <string name="create_task_headline">Aufgabe\nhinzufügen</string>
+    <string name="create_task_headline_editmode">Aufgabe\nbearbeiten</string>
+
+    <string name="create_task_button">Aufgabe hinzufügen</string>
+    <string name="create_task_button_editmode">Speichern</string>
+
+    <string name="create_task_title_hint">Titel (wichtige Infos, Aufgabe*n)</string>
+    <string name="create_task_description_hint">Beschreibung (weitere Infos zur Aufgabe, Hinweise)</string>
+
+    <string name="create_task_subject_default_text">Fach auswählen</string>
+    <string name="create_task_reminder_default_text">Erinnerung auswählen</string>
+    <string name="create_task_dueat_date_default_text">Fälligkeitsdatum auswählen</string>
+
+    <string name="create_task_subject_alert_dialog_title">Fach:</string>
+    <string name="create_task_reminder_alert_dialog_title">Erinnern (am):</string>
+
+    <string name="create_task_date_mustbeafternow_error">Das Datum darf nicht in der Vergangenheit liegen!</string>
+    <string name="create_task_reminder_mustbebefore_error">Das Erinnerungsdatum muss vor dem Fälligkeitsdatum liegen!</string>
+    <string name="create_task_reminder_mustselectdueatbefore_error">Bitte selektiere zuerst das Fälligkeitsdatum.</string>
+    <string name="create_task_edittext_isempty_error">Darf nicht leer sein!</string>
+    <string name="create_task_informationmissing_error">Bitte fülle alle obigen Felder aus.</string>
+
+    <!-- View Task Activity strings -->
+    <string name="view_task_edit_button_contentdesc">Aufgabe bearbeiten</string>
+    <string name="view_task_headline">Aufgabe</string>
+    <string name="view_task_button_markcompleted">Als erledigt markieren</string>
+    <string name="view_task_button_completed">Erledigt</string>
+
+    <string name="view_task_button_delete">Löschen</string>
+    <string name="view_task_delete_alert_title">Aufgabe löschen</string>
+    <string name="view_task_delete_alert_message">Möchtest du die Aufgabe wirlich löschen?</string>
+
+    <string name="view_task_subject_invalid">Invalid subject!</string>
+
+    <!-- ====== Subject names ====== -->
+    <string name="subject_biology">Biologie</string>
+    <string name="subject_nwt">NwT</string>
+    <string name="subject_imp">IMP</string>
+    <string name="subject_spanish">Spanisch</string>
+    <string name="subject_mathematics">Mathematik</string>
+    <string name="subject_german">Deutsch</string>
+    <string name="subject_english">Englisch</string>
+    <string name="subject_history">Geschichte</string>
+    <string name="subject_latin">Latein</string>
+    <string name="subject_french">Französisch</string>
+    <string name="subject_physics">Physik</string>
+    <string name="subject_sports">Sport</string>
+    <string name="subject_geography">Geographie</string>
+    <string name="subject_evangelical_religion">Ev. Religion</string>
+    <string name="subject_catholic_religion">Kath. Religion</string>
+    <string name="subject_ethnics">Ethik</string>
+    <string name="subject_gkwbs">GkWBS</string>
+    <string name="subject_chemistry">Chemie</string>
+    <!-- ============================== -->
+
+</resources>
